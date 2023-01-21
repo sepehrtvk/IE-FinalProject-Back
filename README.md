@@ -6,7 +6,6 @@ A HTTP endpoint monitor service written in node js with RESTful API.
 
 - [Installation](#Installation)
 - [API](#API)
-- [Package Structure](#Package-Structure)
 
 ## Installation
 
@@ -60,14 +59,15 @@ request structure (same as login):
 
 **Create URL:**
 
-`POST /api/urls`
+`POST /api/v1/urls`
 
 request structure:
 
 ```
 {
-	"address":"http://some-valid-url.com" // valid url address
-	"threshold":20 // url fail threshold
+    "endPoint":"http://aut.ac.ir",
+    "thereshold":4,
+    "userId":"63cb8ce873c61c7de5c53a31"
 }
 ```
 
